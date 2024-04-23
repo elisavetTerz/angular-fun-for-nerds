@@ -1,3 +1,9 @@
+
+## Βήμα 2: Δημιουργία νέου component
+ 
+- Δημιουργία ενός νέου component με την εντολή `ng generate component components/navbar`.
+
+
 ## Βήμα 0: Προετοιμασία και βασικές ενέργειες
  
 - Εγκατάσταση του Angular CLI
