@@ -1,5 +1,12 @@
+## Βήμα 3: Δημιουργία νέου component
+ 
+- Δημιουργία ενός νέου component odd-length-component με την εντολή `ng generate component components/odd-length`.
 
 ## Βήμα 2: Δημιουργία νέου component
+ 
+- Δημιουργία ενός νέου component με την εντολή `ng generate component components/word-input`.
+
+## Βήμα 1: Δημιουργία νέου component
  
 - Δημιουργία ενός νέου component με την εντολή `ng generate component components/navbar`.
 

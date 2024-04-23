@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-word-input',
@@ -9,10 +10,18 @@ import { Component } from '@angular/core';
 })
 export class WordInputComponent {
   userInput: string = '';
+  @Output() userInputChange = new EventEmitter<string>();
+  @Output() word = new EventEmitter<string>();
+
+  currentWord = '';
 
   onUserInput(event: Event) {
-    const value = (event.target as HTMLInputElement).value;
-    this.userInput = value;
+    const input = event.target as HTMLInputElement;
+    this.userInputChange.emit(input.value);
+    this.currentWord = input.value;
   }
 
+  onSubmit() {
+    this.word.emit(this.currentWord);
+  }
 }

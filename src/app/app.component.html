@@ -1,8 +1,9 @@
 <div class="d-flex justify-content-center align-items-center p-5">
   <div class="col-12 col-md-10 col-lg-10"> <!-- Set width to 80% for medium and large screens -->
-    <div class="d-flex flex-column mb-3 gap-2">
+    <div class="d-flex flex-column mb-3 gap-4">
         <app-navbar></app-navbar>
-        <app-word-input></app-word-input>
+        <app-word-input (userInputChange)="onUserInputChange($event)" (word)="onWord($event)"></app-word-input>
+        <app-odd-length ></app-odd-length>
     </div>
   </div>
 </div>
