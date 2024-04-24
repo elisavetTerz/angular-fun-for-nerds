@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class OddLengthComponent {
 @Input() userInput: string = '';
+@Input() words: string[] = [];
 }

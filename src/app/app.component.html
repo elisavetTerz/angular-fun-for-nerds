@@ -2,8 +2,18 @@
   <div class="col-12 col-md-10 col-lg-10"> <!-- Set width to 80% for medium and large screens -->
     <div class="d-flex flex-column mb-3 gap-4">
         <app-navbar></app-navbar>
-        <app-word-input (userInputChange)="onUserInputChange($event)" (word)="onWord($event)"></app-word-input>
-        <app-odd-length ></app-odd-length>
+        <app-word-input 
+          (userInput)="onUserInputChange($event)" 
+          (word)="onWord($event)"></app-word-input>
+        <div class="d-flex justify-content-between gap-2">
+          <app-odd-length 
+          [userInput]="inputOddWord"
+          [words]="oddLengthWords"></app-odd-length>
+          <app-even-length
+          [userInput]="inputEvenWord"
+          [words]="evenLengthWords"></app-even-length>
+        </div>
+        
     </div>
   </div>
 </div>

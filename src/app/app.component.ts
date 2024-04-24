@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WordInputComponent } from './components/word-input/word-input.component';
 import { OddLengthComponent } from "./components/odd-length/odd-length.component";
+import { EvenLengthComponent } from "./components/even-length/even-length.component";
 
 
 @Component({
@@ -10,11 +11,11 @@ import { OddLengthComponent } from "./components/odd-length/odd-length.component
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavbarComponent, WordInputComponent, OddLengthComponent]
+    imports: [RouterOutlet, NavbarComponent, WordInputComponent, OddLengthComponent, EvenLengthComponent]
 })
 export class AppComponent {
-  inputOddWord: string = "";
-  inputEvenWord: string = "";
+  inputOddWord: string = '';
+  inputEvenWord: string = '';
 
   oddLengthWords: string[] = [];
   evenLengthWords: string[] = [];

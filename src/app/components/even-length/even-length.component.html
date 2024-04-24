@@ -1,12 +1,12 @@
 @if (userInput.length > 0) {
-    <p class="text-danger">{{userInput}}</p>
+    <p class="text-danger">{{ userInput }}</p>
 }
 @if (!words || words.length === 0) {
-    <p>No odd length words submited</p>
+    <p>No even length words submited</p>
 } @else {
-    <h2>Odd Length Words:</h2>
+    <h2>Even Length Words:</h2>
     @for (word of words; track word) {
         <p> {{ word }} </p>
-             
-    }   
+        <br/>
+    }
 }
